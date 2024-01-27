@@ -26,11 +26,11 @@ else:
 sheet_titles = wb.sheetnames
 
 # Iterate through each sheet
-# remove all other worksheet except the one just created
-print('Removing other worksheets ....')
+# remove all other worksheet
+print('Removing all worksheets ....')
 for sheet_title in sheet_titles:
     # if sheet_title != '1':
-        # Delete the sheet
+    # Delete the sheet
     wb.remove(wb[sheet_title])
 
 # Create a list of worksheet with titles 1,2,3,...

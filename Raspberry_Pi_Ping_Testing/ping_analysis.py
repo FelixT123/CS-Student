@@ -12,9 +12,12 @@ failure_count_per_day = {}
 # Get a list of files in the folder that start with the specified prefix
 ping_result_files = [file for file in os.listdir(folder_path) if file.startswith(prefix)]
 
+# Sort the ping result files by their names
+ping_result_files.sort()
+
 # Process each ping result file
 for file_name in ping_result_files:
-    #print("filename:", file_name)
+    print("reading data from filename:", file_name)
     with open(os.path.join(folder_path, file_name), 'r') as file:
         for line in file:
             if line.strip():

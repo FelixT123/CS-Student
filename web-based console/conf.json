@@ -1,0 +1,15 @@
+{
+    "name": "MyApp",
+    "login_id": "admin",
+    "login_pw": "password",
+    "LED_pin_arr": [
+        {
+            "name": "RED",
+            "pin": 13
+        },
+        {
+            "name": "GREEN",
+            "pin": 14
+        }
+    ]
+}
